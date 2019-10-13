@@ -10,3 +10,7 @@ var persona = {
 
 console.log( persona.direccion.pais );
 console.log( persona.direccion );
+
+persona.direccion.zipCode = 224455;
+
+console.log(persona.direccion)
