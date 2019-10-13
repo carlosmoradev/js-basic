@@ -58,3 +58,6 @@ imprimirObjeto({
 });
 
 
+var otraPersona = {nombre: "Pablo", apellido: "Palacio"};
+
+imprimirObjeto(otraPersona);
