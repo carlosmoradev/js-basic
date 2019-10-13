@@ -83,9 +83,16 @@ console.log(esMayor05());
 function crearFuncion(){
     return function(){
         console.log("Me crearon!!!");
+        return function(){
+            console.log("funcion inmersa en funcion");
+        }
     }
 }
 
 var genera = crearFuncion();
 
 genera();
+
+var inmersa = genera();
+
+inmersa();
