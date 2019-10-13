@@ -40,3 +40,5 @@ function imprimirNombre(nombre, apellido){
     console.log(`${nombre} ${apellido}`);
 }
 imprimirNombre("Carlos", "Mora");
+imprimirNombre("Pedro");
+
