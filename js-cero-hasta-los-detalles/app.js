@@ -69,3 +69,13 @@ function obtenerAleatorio(){
 }
 
 console.log(obtenerAleatorio() + 11);
+
+function booleano(){
+    if (obtenerAleatorio() > 0.5){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+console.log(booleano());
