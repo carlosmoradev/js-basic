@@ -13,4 +13,10 @@ console.log( persona.direccion );
 
 persona.direccion.zipCode = 224455;
 
-console.log(persona.direccion)
+console.log(persona.direccion);
+
+var campo = "edad";
+
+console.log(persona[campo]);
+
+console.log( persona["direccion"]["pais"] );
