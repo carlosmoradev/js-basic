@@ -47,3 +47,14 @@ imprimirNombre("Carlos", "Mora");
 imprimirNombre("Pedro");
 imprimirNombre("", "smith");
 
+
+function imprimirObjeto(persona){
+    console.log(`${persona.nombre} ${persona.apellido}`);
+}
+
+imprimirObjeto({
+    nombre: "Jose",
+    apellido: "Perea"
+});
+
+
