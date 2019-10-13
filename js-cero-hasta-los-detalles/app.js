@@ -24,7 +24,11 @@ console.log( persona["direccion"]["pais"] );
 //Funciones
 
 function primeraFuncion(){
-    var a = 20;
-    console.log(a);
+    // var a = 20;
+    // console.log(a);
 }
 primeraFuncion();
+
+
+a = primeraFuncion();
+console.log(a);
