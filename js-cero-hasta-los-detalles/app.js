@@ -32,3 +32,11 @@ primeraFuncion();
 
 a = primeraFuncion();
 console.log(a);
+
+
+function imprimirNombre(nombre, apellido){
+    console.log(nombre + " " + apellido);
+    //misma opcion con backticks
+    console.log(`${nombre} ${apellido}`);
+}
+imprimirNombre("Carlos", "Mora");
