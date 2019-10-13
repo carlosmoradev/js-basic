@@ -28,11 +28,24 @@
 
 
 
-function Persona(){
+function Persona(nombre, apellido){
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.edad = 39;
 
+    this.imprimirPersona = function(){
+        return `${this.nombre} ${this.apellido} "(${this.edad})"`;
+    }
 }
 
 
-var carlos = new Persona();
-console.log(carlos);
+var persona = new Persona("Isaac", "Asimov");
+console.log(persona);
 
+console.log(persona.nombre);
+console.log(persona.imprimirPersona());
+
+persona.nombre = "Carlos";
+persona.edad = 40;
+
+console.log(persona.imprimirPersona());
