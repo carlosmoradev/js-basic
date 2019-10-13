@@ -61,3 +61,11 @@ imprimirObjeto({
 var otraPersona = {nombre: "Pablo", apellido: "Palacio"};
 
 imprimirObjeto(otraPersona);
+
+//retorno de funciones
+
+function obtenerAleatorio(){
+    return Math.random();
+}
+
+console.log(obtenerAleatorio() + 11);
