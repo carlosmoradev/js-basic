@@ -33,6 +33,6 @@ function Persona(){
 }
 
 
-var carlos = Persona();
+var carlos = new Persona();
 console.log(carlos);
 
