@@ -35,10 +35,15 @@ console.log(a);
 
 
 function imprimirNombre(nombre, apellido){
-    console.log(nombre + " " + apellido);
+    //Opcion para parametros alternativos
+    nombre = nombre || "Jhon";
+    apellido = apellido || "Doe";
+ 
+    // console.log(nombre + " " + apellido);
     //misma opcion con backticks
     console.log(`${nombre} ${apellido}`);
 }
 imprimirNombre("Carlos", "Mora");
 imprimirNombre("Pedro");
+imprimirNombre("", "smith");
 
