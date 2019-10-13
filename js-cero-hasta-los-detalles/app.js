@@ -70,7 +70,7 @@ function obtenerAleatorio(){
 
 console.log(obtenerAleatorio() + 11);
 
-function booleano(){
+function esMayor05(){
     if (obtenerAleatorio() > 0.5){
         return true;
     }else{
@@ -78,4 +78,14 @@ function booleano(){
     }
 }
 
-console.log(booleano());
+console.log(esMayor05());
+
+function crearFuncion(){
+    return function(){
+        console.log("Me crearon!!!");
+    }
+}
+
+var genera = crearFuncion();
+
+genera();
