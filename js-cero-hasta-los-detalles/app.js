@@ -1,98 +1,38 @@
-var persona = {
-    nombre: "Juana",
-    apellido: "Lopez",
-    edad: 25,
-    direccion: {
-        pais: "Costa Rica",
-        ciudad: "San Jose"
-    }
+// //metodos y THIS
+
+// var nombre = "Peter"
+
+// var persona = {
+//     nombre: "El Brayan",
+//     apellido: "Stevenzon",
+//     imprimirNombre: function(){
+//         console.log(nombre);  //lo toma del scope global
+//         console.log(this.nombre); //el this hace que lo tome desde el scope de la funcion
+//     },
+//     direccion:{
+//         pais: "Colombia",
+//         obtenerPais: function(){
+//             var self = this;    //!self es un nombre de variable muy usado para referirse a this
+
+//             var nuevaDireccion = function(){
+//                 console.log(self);
+//                 console.log(`La direccion es en ${self.pais}`); //la variable self permite que js realice la busqueda en el objeto inmediatament anterior
+//             }
+//             nuevaDireccion();
+//         }
+//     }
+// }
+
+// persona.direccion.obtenerPais();
+
+
+
+
+function Persona(){
+
 }
 
-console.log( persona.direccion.pais );
-console.log( persona.direccion );
 
-persona.direccion.zipCode = 224455;
+var carlos = Persona();
+console.log(carlos);
 
-console.log(persona.direccion);
-
-var campo = "edad";
-
-console.log(persona[campo]);
-
-console.log( persona["direccion"]["pais"] );
-
-//Funciones
-
-function primeraFuncion(){
-    // var a = 20;
-    // console.log(a);
-}
-primeraFuncion();
-
-
-a = primeraFuncion();
-console.log(a);
-
-
-function imprimirNombre(nombre, apellido){
-    //Opcion para parametros alternativos
-    nombre = nombre || "Jhon";
-    apellido = apellido || "Doe";
- 
-    // console.log(nombre + " " + apellido);
-    //misma opcion con backticks
-    console.log(`${nombre} ${apellido}`);
-}
-imprimirNombre("Carlos", "Mora");
-imprimirNombre("Pedro");
-imprimirNombre("", "smith");
-
-
-function imprimirObjeto(persona){
-    console.log(`${persona.nombre} ${persona.apellido}`);
-}
-
-imprimirObjeto({
-    nombre: "Jose",
-    apellido: "Perea"
-});
-
-
-var otraPersona = {nombre: "Pablo", apellido: "Palacio"};
-
-imprimirObjeto(otraPersona);
-
-//retorno de funciones
-
-function obtenerAleatorio(){
-    return Math.random();
-}
-
-console.log(obtenerAleatorio() + 11);
-
-function esMayor05(){
-    if (obtenerAleatorio() > 0.5){
-        return true;
-    }else{
-        return false;
-    }
-}
-
-console.log(esMayor05());
-
-function crearFuncion(){
-    return function(){
-        console.log("Me crearon!!!");
-        return function(){
-            console.log("funcion inmersa en funcion");
-        }
-    }
-}
-
-var genera = crearFuncion();
-
-genera();
-
-var inmersa = genera();
-
-inmersa();
