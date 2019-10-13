@@ -20,3 +20,11 @@ var campo = "edad";
 console.log(persona[campo]);
 
 console.log( persona["direccion"]["pais"] );
+
+//Funciones
+
+function primeraFuncion(){
+    var a = 20;
+    console.log(a);
+}
+primeraFuncion();
