@@ -72,10 +72,29 @@ console.log(arr);
 
 
 
-console.info(arr.map(Math.random));
+// console.info(arr.map(Math.random));
 
-arr = arr.join();
-console.info(arr);
+// arr = arr.join();
+// console.info(arr);
 
-arr = arr.split();
-console.info(arr);
+// arr = arr.split();
+// console.info(arr);
+
+arreglo = [
+    true,
+    false,
+    {
+        nombre: "Carlos",
+        apellido: "Mora"
+    },
+    true,
+    function(){
+        console.info("Funcion que es parte de un arreglo");
+    },
+    function(persona){
+        console.log(`${persona.nombre} ${persona.apellido}`);
+    }
+];
+
+arreglo[4]();
+arreglo[5](arreglo[2]);
