@@ -76,3 +76,6 @@ console.info(arr.map(Math.random));
 
 arr = arr.join();
 console.info(arr);
+
+arr = arr.split();
+console.info(arr);
