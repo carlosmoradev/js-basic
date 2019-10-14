@@ -28,24 +28,51 @@
 
 
 
-function Persona(nombre, apellido){
-    this.nombre = nombre;
-    this.apellido = apellido;
-    this.edad = 39;
+// function Persona(nombre, apellido){
+//     this.nombre = nombre;
+//     this.apellido = apellido;
+//     this.edad = 39;
 
-    this.imprimirPersona = function(){
-        return `${this.nombre} ${this.apellido} "(${this.edad})"`;
-    }
-}
+//     this.imprimirPersona = function(){
+//         return `${this.nombre} ${this.apellido} "(${this.edad})"`;
+//     }
+// }
 
 
-var persona = new Persona("Isaac", "Asimov");
-console.log(persona);
+// var persona = new Persona("Isaac", "Asimov");
+// console.log(persona);
 
-console.log(persona.nombre);
-console.log(persona.imprimirPersona());
+// console.log(persona.nombre);
+// console.log(persona.imprimirPersona());
 
-persona.nombre = "Carlos";
-persona.edad = 40;
+// persona.nombre = "Carlos";
+// persona.edad = 40;
 
-console.log(persona.imprimirPersona());
+// console.log(persona.imprimirPersona());
+
+
+//*Arreglos
+
+arr = [1,3,4,5,6,7,8];
+
+console.info(arr[1], arr[6]);
+
+console.log(arr);
+
+arr.reverse();
+
+console.log(arr);
+
+// arr.map(function (elem){
+//     elem *=2;
+//     return elem;
+// });
+
+// console.info(arr);
+
+
+
+console.info(arr.map(Math.random));
+
+arr = arr.join();
+console.info(arr);
